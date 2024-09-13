@@ -1,0 +1,155 @@
+@import url('https://fonts.googleapis.com/css2?family=Overpass:ital,wght@0,100..900;1,100..900&display=swap');
+
+:root {
+    /* ## Colors */
+    /* ### Primary */
+    --color01: #fb7413;
+
+    /* ### Neutral */
+    --white: #ffffff;
+    --color02: #959eac;
+    --color03: #252d37;
+    --color04: #121417;
+
+    /* BG */
+    --color05:#202731;
+    --color06: #171e28;
+}
+
+* {
+    padding: 0px;
+    margin: 0px;
+    font-family: "Overpass", sans-serif;
+    font-size: 15px;
+    box-sizing: border-box;
+}
+
+body {
+    height: 96vh;
+    position: relative;
+    background-color: var(--color04);
+}
+
+article {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+
+    width: 300px;
+    background-image: linear-gradient(to bottom, var(--color05), var(--color06));
+    padding: 20px;
+    border-radius: 10px;
+
+    transform: translate(-50%, -50%);
+}
+
+.icon-star {
+    width: 3px;
+    background-color: var(--color03);
+    padding: 10px;
+    border-radius: 50%;
+}
+
+h1 {
+    color: var(--white);
+    font-size: 22px;
+    margin-top: 10px;
+}
+
+p {
+    color: var(--color02);
+    font-size: 13px;
+    line-height: 20px;
+    margin: 10px 0 20px;
+}
+
+ul {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    list-style-type: none;
+}
+
+li {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 40px;
+    height: 40px;
+    background-color: var(--color03);
+    color: var(--color02);
+    font-size: 13px;
+    font-weight: bold;
+    border-radius: 50%;
+
+    transition: .2s;
+}
+
+li:hover {
+    color: var(--color04);
+    background-color: var(--color01);
+    cursor: pointer;
+}
+
+.checked {
+    color: var(--color04);
+    background-color: white;
+}
+
+.submit {
+    display: block;
+    width: 100%;
+    background-color: var(--color01);
+    color: var(--color04);
+    text-transform: uppercase;
+    font-size: 13px;
+    font-weight: bold;
+    letter-spacing: 2px;
+    padding: 12px;
+    border: none;
+    border-radius: 20px;
+    margin: 20px 0 5px;
+}
+
+.submit:hover {
+    background-color: var(--white);
+    cursor: pointer;
+}
+
+.illustration {
+    text-align: center;
+    margin-top: 5px;
+}
+
+.illustration > img {
+    width: 125px;
+}
+
+span {
+    display: block;
+    width: 170px;
+    color: var(--color01);
+    background-color: var(--color03);
+    font-size: 13px;
+    text-align: center;
+    padding: 7px;
+    border-radius: 25px;
+    margin: auto;
+    margin-top: 15px;
+}
+
+strong {
+    display: block;
+    color: white;
+    font-size: 22px;
+    text-align: center;
+    margin: 25px 0 5px;
+}
+
+.thanks {
+    text-align: center;
+}
+
+.hide {
+    display: none;
+}
